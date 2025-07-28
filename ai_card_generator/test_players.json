@@ -1,0 +1,44 @@
+[
+  {
+    "prenom": "Auguste",
+    "age": 37,
+    "photo_url": "https://storage.googleapis.com/squadfield/auguste.jpg",
+    "sport": "Foot",
+    "stats": {
+      "technique": 78,
+      "vitesse": 75,
+      "physique": 76,
+      "tirs": 72,
+      "defense": 77,
+      "passe": 79
+    }
+  },
+  {
+    "prenom": "Marie",
+    "age": 22,
+    "photo_url": "https://storage.googleapis.com/squadfield/marie.jpg",
+    "sport": "Foot",
+    "stats": {
+      "technique": 85,
+      "vitesse": 88,
+      "physique": 82,
+      "tirs": 86,
+      "defense": 79,
+      "passe": 90
+    }
+  },
+  {
+    "prenom": "Lucas",
+    "age": 16,
+    "photo_url": "https://storage.googleapis.com/squadfield/lucas.jpg",
+    "sport": "Foot",
+    "stats": {
+      "technique": 68,
+      "vitesse": 72,
+      "physique": 65,
+      "tirs": 70,
+      "defense": 66,
+      "passe": 71
+    }
+  }
+]

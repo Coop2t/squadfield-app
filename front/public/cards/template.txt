@@ -1,0 +1,40 @@
+Card Template Configuration
+
+This directory contains card template assets and configurations for SQUADFIELD.
+
+Default Card Dimensions:
+- Width: 300px
+- Height: 420px
+- Aspect Ratio: 5:7 (standard trading card)
+
+Card Layout Elements:
+1. Player Photo (background)
+2. Player Name (top overlay)
+3. Position & Sport (subtitle)
+4. Overall Rating (prominent display)
+5. Stats bars (bottom section)
+6. Rarity indicator (border/background effect)
+7. Card number (bottom right)
+
+Supported Image Formats:
+- PNG (recommended for quality)
+- JPEG (for smaller file sizes)
+- WebP (for modern browsers)
+
+Color Schemes by Rarity:
+- Common: Gray (#6B7280)
+- Uncommon: Green (#10B981)
+- Rare: Blue (#3B82F6)
+- Epic: Purple (#8B5CF6)
+- Legendary: Gold (#F59E0B)
+
+Font Stack:
+- Headings: Inter, system-ui, sans-serif
+- Body: Inter, system-ui, sans-serif
+- Numbers: Inter, monospace fallback
+
+Canvas Generation Settings:
+- DPI: 300 (print quality)
+- Background: Gradient based on rarity
+- Text Rendering: High quality antialiasing
+- Image Processing: Bicubic interpolation
