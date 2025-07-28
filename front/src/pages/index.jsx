@@ -1,3 +1,4 @@
+// ⚡ Trigger redeploy Vercel - auto touch by Cline
 import Head from 'next/head';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
