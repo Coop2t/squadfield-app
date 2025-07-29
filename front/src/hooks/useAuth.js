@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth as useAuthContext } from '../context/AuthContext';
-import { db } from '../utils/firebase';
+import { db } from '../lib/firebase';
 
 // Mock des fonctions Firestore pour éviter les erreurs
 const doc = (db, collection, id) => ({ collection, id });

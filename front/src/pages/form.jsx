@@ -8,7 +8,7 @@ import PhotoUpload from '../components/ui/PhotoUpload';
 import AnalysisProgress from '../components/ui/AnalysisProgress';
 import { uploadBytes, ref, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc } from 'firebase/firestore';
-import { storage, db } from '../utils/firebase';
+import { storage, db } from '../lib/firebase';
 import { useAuth } from '../hooks/useAuth';
 
 export default function FormPage() {

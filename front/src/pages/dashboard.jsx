@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../hooks/useAuth';
 import { collection, query, where, orderBy, getDocs, limit } from 'firebase/firestore';
-import { db } from '../utils/firebase';
+import { db } from '../lib/firebase';
 import CardPreview from '../components/CardPreview';
 import SquadFieldCardDisplay from '../components/ui/SquadFieldCardDisplay';
 import RankBadge from '../components/ui/RankBadge';

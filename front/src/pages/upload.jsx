@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useAuth } from '../hooks/useAuth';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc } from 'firebase/firestore';
-import { storage, db } from '../utils/firebase';
+import { storage, db } from '../lib/firebase';
 import { generateCardData, calculateCardValue } from '../utils/generateCard';
 import { generateCardImage } from '../lib/generateCardImage';
 import CardPreview from '../components/CardPreview';

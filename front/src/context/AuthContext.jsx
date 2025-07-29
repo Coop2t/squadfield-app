@@ -5,8 +5,8 @@ import {
   signOut, 
   onAuthStateChanged,
   updateProfile
-} from '../utils/firebase';
-import { auth } from '../utils/firebase';
+} from 'firebase/auth';
+import { auth } from '../lib/firebase';
 
 const AuthContext = createContext();
 
@@ -40,12 +40,42 @@ export function AuthProvider({ children }) {
   }
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setCurrentUser(user);
+    let unsubscribe = () => {};
+    
+    try {
+      // Vérifier que auth est disponible et valide
+      if (auth && typeof auth.onAuthStateChanged === 'function') {
+        unsubscribe = onAuthStateChanged(auth, (user) => {
+          setCurrentUser(user);
+          setLoading(false);
+        });
+      } else if (auth && typeof auth.onAuthStateChanged === 'function') {
+        // Utiliser la méthode directe si disponible
+        unsubscribe = auth.onAuthStateChanged((user) => {
+          setCurrentUser(user);
+          setLoading(false);
+        });
+      } else {
+        // Mode fallback - pas d'auth disponible
+        console.warn('⚠️ Auth non disponible - mode fallback');
+        setCurrentUser(null);
+        setLoading(false);
+      }
+    } catch (error) {
+      console.error('❌ Erreur lors de l\'initialisation de l\'auth listener:', error);
+      setCurrentUser(null);
       setLoading(false);
-    });
+    }
 
-    return unsubscribe;
+    return () => {
+      try {
+        if (typeof unsubscribe === 'function') {
+          unsubscribe();
+        }
+      } catch (error) {
+        console.error('❌ Erreur lors du cleanup de l\'auth listener:', error);
+      }
+    };
   }, []);
 
   const value = {

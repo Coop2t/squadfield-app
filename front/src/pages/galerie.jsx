@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useAuth } from '../hooks/useAuth';
 import { collection, query, orderBy, getDocs, limit, startAfter, where } from 'firebase/firestore';
-import { db } from '../utils/firebase';
+import { db } from '../lib/firebase';
 import CardPreview from '../components/CardPreview';
 
 export default function Galerie() {
