@@ -1,0 +1,16 @@
+// ✅ VARIABLES FIREBASE POUR VERCEL - COPIER/COLLER DIRECT
+// Environment: Production
+
+NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCP3GU7WC26cGlrEL5H9YwJqC1KXD-Mo-M
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=squadfield-f1f49.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=squadfield-f1f49
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=squadfield-f1f49.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=937099986505
+NEXT_PUBLIC_FIREBASE_APP_ID=1:937099986505:web:6e4e908aa604e76d4aa198
+
+// 🎯 INSTRUCTIONS:
+// 1. Aller sur https://vercel.com/dashboard
+// 2. Projet: squadfield-front > Settings > Environment Variables
+// 3. Ajouter chaque variable en mode "Production"
+// 4. Forcer un redéploiement (sans cache)
+// 5. Tester le site en production

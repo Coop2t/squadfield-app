@@ -13,7 +13,7 @@
 
 ```env
 # Firebase Configuration Frontend - OFFICIELLE
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCtVXH4Ai-48k_vH6VShDGPWgReav6zH1c
+NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCP3GU7WC26cGlrEL5H9YwJqC1KXD-Mo-M
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=squadfield-f1f49.firebaseapp.com
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=squadfield-f1f49
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=squadfield-f1f49.firebasestorage.app
@@ -53,7 +53,7 @@ FIREBASE_PROJECT_ID=squadfield-f1f49
 
 ### **✅ Valeurs confirmées correctes :**
 
-- `apiKey: AIzaSyCtVXH4Ai-48k_vH6VShDGPWgReav6zH1c` ✅
+- `apiKey: AIzaSyCP3GU7WC26cGlrEL5H9YwJqC1KXD-Mo-M` ✅
 - `authDomain: squadfield-f1f49.firebaseapp.com` ✅
 - `projectId: squadfield-f1f49` ✅
 - `messagingSenderId: 937099986505` ✅
