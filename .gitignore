@@ -82,3 +82,26 @@ coverage/
 .cache/
 .parcel-cache/
 .vercel
+
+# Documentation and sensitive files
+FIREBASE_CONFIGURATION_REPORT.md
+*.md
+*.txt
+!README.md
+!package.json
+!requirements.txt
+
+# Internal documentation
+**/FIREBASE*.md
+**/GUIDE*.md
+**/CHARTE*.md
+**/SPRINT*.md
+**/SYSTEM*.md
+**/CORRECTION*.md
+**/ACTIVATION*.md
+**/SOLUTION*.md
+**/RESOLUTION*.md
+**/AMELIORATION*.md
+**/COORDONNEES*.md
+**/PIPELINE*.md
+firebase-config-fix.js
